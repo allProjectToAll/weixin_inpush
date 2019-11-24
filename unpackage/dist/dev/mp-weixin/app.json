@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pushList/pushList",
+    "pages/my/my",
+    "components/navTop/navTop",
+    "components/uni-load-more/uni-load-more",
+    "components/jobDetail/jobDetail",
+    "components/compyDetail/compyDetail",
+    "components/inpushResume/inpushResume",
+    "components/inPushHistory/inPushHistory",
+    "components/receivedResume/receivedResume",
+    "components/resumeList/resumeList",
+    "components/resumeDetail/resumeDetail",
+    "components/careResume/careResume",
+    "components/toSucc/toSucc",
+    "pages/login",
+    "pages/otherIndex/otherIndex",
+    "components/throwResume/throwResume",
+    "components/shareHistory/shareHistory",
+    "components/changeCompy/changeCompy",
+    "components/changeCompy/changeCompyPage",
+    "components/toSharePic/toSharePic",
+    "components/manageJob/manageJob",
+    "components/sendHistory/sendHistory"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "内 推",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#200BFF",
+    "borderStyle": "white",
+    "backgroundColor": "#FBFCFB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "职位列表",
+        "iconPath": "static/tabBarIco/zw2.png",
+        "selectedIconPath": "static/tabBarIco/zw1.png"
+      },
+      {
+        "pagePath": "pages/pushList/pushList",
+        "text": "内推榜单",
+        "iconPath": "static/tabBarIco/pk2.png",
+        "selectedIconPath": "static/tabBarIco/pk1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tabBarIco/me2.png",
+        "selectedIconPath": "static/tabBarIco/me1.png"
+      }
+    ]
+  },
+  "preloadRule": {},
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取用户位置"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap47.json"
+}

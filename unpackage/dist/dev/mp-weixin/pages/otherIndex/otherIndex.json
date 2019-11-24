@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "care-resume": "/components/careResume/careResume",
+    "me-component": "/pages/my/meComponent"
+  }
+}

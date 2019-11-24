@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "无公司的进来的职位",
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

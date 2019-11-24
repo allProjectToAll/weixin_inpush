@@ -1,0 +1,111 @@
+/* 清除浮动 */
+.cf(){
+    // IE7-
+    *zoom: 1;
+    // others
+    &:after {
+        content: " ";
+        clear: both;
+        display: table;
+  }
+}
+//清除浮动
+.clear{
+    clear:both
+}
+
+/* 圆角 */
+ .borderRadius(@radius){ 
+     border-radius: @radius; 
+     -webkit-border-radius: @radius;
+     -moz-border-radius: @radius; 
+     -ms-border-radius: @radius;  
+     -o-border-radius: @radius; 
+ }
+ .bdrhalf(){
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+ 
+/* float */
+.left { float:left;display:inline;}
+.right { float:right;display:inline;}
+.fnone { float:none;display:inline;}
+
+/* text-align */
+.tleft { text-align:left;}
+.tright { text-align:right;}
+.tcenter { text-align:center;}
+
+/* display */
+.dis { display:block;}
+.undis { display:none;}
+
+/*常用字号*/
+.f8(){font-size:8upx;}
+.f10(){font-size:10upx;}
+.f12(){font-size:12upx;}
+.f14(){font-size:14upx;}
+.f16(){font-size:16upx;}
+.f18(){font-size:18upx;}
+.f20(){font-size:20upx;}
+.f24(){font-size:24upx;}
+.f26(){font-size:26upx;}
+.f28(){font-size:28upx;}
+.f30(){font-size:30upx;}
+.f32(){font-size:32upx;}
+.f34(){font-size:34upx;}
+.f36(){font-size:36upx;}
+.f40(){font-size:40upx;}
+.f48(){font-size:48upx;}
+.f50(){font-size:50upx;}
+.f56(){font-size:56upx;}
+.f60(){font-size:60upx;}
+.f70(){font-size:70upx;}
+.f80(){font-size:80upx;}
+.f90(){font-size:90upx;}
+.f100(){font-size:100upx;}
+.f110(){font-size:110upx;}
+.f120(){font-size:120upx;}
+
+/*单行载断溢出省略号*/
+.ellipsis(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*2行载断溢出省略号*/
+.spill2(){
+    overflow:hidden;
+    display:-webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+
+/*配模式定位*/
+.pos(r){position:relative;}
+.pos(a){position:absolute;}
+.pos(f){position:fixed;}
+
+/* 背景自适应 默认白色 */
+.bg(@background-size:white){
+    background-size: @background-size;
+    -webkit-background-size:@background-size;
+    -moz-background-size: @background-size;
+    -o-background-size: @background-size;
+    -ms-background-size:@background-size;
+}
+
+
+
+///////////////////////////////////////////////////
+.green{
+    background:green;
+}
+.red{
+    background:red;
+}

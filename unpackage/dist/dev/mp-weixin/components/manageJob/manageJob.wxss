@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 清除浮动 */
+.manageJob .eachManegeJob {
+  height: 214rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+  background: white;
+  padding-top: 30rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobTop {
+    width: -webkit-calc(100% - 40rpx);
+    width: calc(100% - 40rpx);
+    border-bottom: 1px solid #E5E5E5;
+    height: 139rpx;
+    margin-left: 40rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobleftBox {
+      float: left;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobleftBox .jobName {
+        font-size: 34rpx;
+        font-weight: 600;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobleftBox .jobName .jjMoney {
+          padding: 9rpx 12rpx;
+          -webkit-border-radius: 17rpx;
+                  border-radius: 17rpx;
+          background: rgba(248, 0, 128, 0.1);
+          color: #F80080;
+          font-size: 24rpx;
+          display: inline-block;
+          font-weight: 400;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobleftBox .someDetail {
+        font-size: 26rpx;
+        color: rgba(0, 0, 0, 0.65);
+        margin-top: 26rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobrightBox {
+      float: right;
+      font-size: 26rpx;
+      color: rgba(0, 0, 0, 0.65);
+      text-align: right;
+      margin-right: 40rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobrightBox .time {
+        margin-top: 15rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobTop .jobrightBox .xzCash {
+        margin-top: 25rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobfooter {
+    width: 100%;
+}
+.manageJob .eachManegeJob .eachManegeJobfooter .eachBottom {
+      width: 33.33%;
+      float: left;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #203AD2;
+      font-weight: 400;
+      font-size: 28rpx;
+      padding-top: 22rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobfooter .eachBottom .btnImage {
+        width: 32rpx;
+        height: 32rpx;
+        display: inline-block;
+        margin-right: 5rpx;
+}
+.manageJob .eachManegeJob .eachManegeJobfooter .eachBottom2 {
+      color: #999999;
+}
+

@@ -1,0 +1,306 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "uni-app",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		}
+		,{
+		    "path" : "pages/pushList/pushList",
+		    "style" : {
+				"navigationBarTitleText": "内推榜单"
+			}
+		}
+		,{
+		    "path" : "pages/my/my",
+		    "style" : {
+				"navigationBarTitleText": "我的"
+			}
+		}
+        ,{
+            "path" : "components/navTop/navTop",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/uni-load-more/uni-load-more",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/jobDetail/jobDetail",
+            "style" : {
+				"navigationBarTitleText": "职位详情"
+			}
+        }
+        ,{
+            "path" : "components/compyDetail/compyDetail",
+            "style" : {
+				"navigationBarTitleText": "公司详情"
+			}
+        }
+        ,{
+            "path" : "components/inpushResume/inpushResume",
+            "style" : {
+				"navigationBarTitleText": "内推简历"
+			}
+        }
+        ,{
+            "path" : "components/inPushHistory/inPushHistory",
+            "style" : {
+				"navigationBarTitleText": "内推记录"
+			}
+        }
+        ,{
+            "path" : "components/receivedResume/receivedResume",
+            "style" : {
+				"navigationBarTitleText": "我收到的简历"
+			}
+        }
+        ,{
+            "path" : "components/resumeList/resumeList",
+            "style" : {
+				"navigationBarTitleText": "职位简历列表"
+			}
+        }
+        ,{
+            "path" : "components/resumeDetail/resumeDetail",
+            "style" : {
+				"navigationBarTitleText": "简历详情"
+			}
+        }
+        ,{//分享之后取消关注的简历
+            "path" : "components/careResume/careResume",
+            "style" : {
+				// "enablePullDownRefresh": true,
+				// "navigationStyle": "custom"
+				"navigationBarTitleText": "无公司的进来的职位"
+			}
+        }
+        ,{
+            "path" : "components/toSucc/toSucc",//成功
+            "style" : {
+				"navigationBarTitleText": "内推简历"
+			}
+        },{
+            "path" : "pages/login",//登录
+            "style" : {
+				"navigationBarTitleText": "登录"
+			}
+        }
+        ,{
+            "path" : "pages/otherIndex/otherIndex",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+        }
+        ,{
+            "path" : "components/throwResume/throwResume",
+            "style" : {
+				"navigationBarTitleText": "内推简历"//投递简历页面
+			}
+        }
+        ,{
+            "path" : "components/shareHistory/shareHistory",
+            "style" : {
+				"navigationBarTitleText": "分享记录"
+			}
+        }
+        ,{
+            "path" : "components/changeCompy/changeCompy",
+            "style" : {
+				"navigationBarTitleText": "选择企业"//作为组件,在登录的时候用
+			}
+        }
+        ,{
+            "path" : "components/changeCompy/changeCompyPage",
+            "style" : {
+				"navigationBarTitleText": "选择企业"//作为单独的页面，在两个“我的”里面用
+			}
+        }
+        ,{
+            "path" : "components/toSharePic/toSharePic",
+            "style" : {
+				// "navigationBarTitleText": "确定分享"//分享的时候多一个分享页面
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+        }
+        ,{
+            "path" : "components/manageJob/manageJob",
+            "style" : {
+				"navigationBarTitleText": "我管理的职位"
+			}
+        }
+        ,{
+            "path" : "components/sendHistory/sendHistory",
+            "style" : {
+				"navigationBarTitleText": "投递记录"
+			}
+        }
+    ],
+	// "globalStyle": {
+	// 	"navigationBarTextStyle": "black",
+	// 	"navigationBarTitleText": "内 推",
+	// 	"navigationBarBackgroundColor": "#FFFFFF",
+	// 	"backgroundColor": "#F5F5F5"
+	// },
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#200BFF",
+		"borderStyle": "white",
+		"backgroundColor": "#FBFCFB",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "职位列表",
+				"iconPath": "static/tabBarIco/zw2.png",
+				"selectedIconPath": "static/tabBarIco/zw1.png"
+			},
+			{
+				"pagePath": "pages/pushList/pushList",
+				"text": "内推榜单",
+				"iconPath": "static/tabBarIco/pk2.png",
+				"selectedIconPath": "static/tabBarIco/pk1.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabBarIco/me2.png",
+				"selectedIconPath": "static/tabBarIco/me1.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "内 推",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效 针对单个页面编译
+		"current": 10, //当前激活的模式（list 的索引项）
+		"list": [
+			{
+				"name": "inPushHistory", //内推记录
+				"path": "components/inPushHistory/inPushHistory",
+				"style": {
+					"navigationBarTitleText": "内推记录"
+				}
+			}
+			,{
+				"name": "sendHistory", 
+				"path": "components/sendHistory/sendHistory",
+				"style": {
+					"navigationBarTitleText": "投递记录"
+				}
+			}
+			,{
+				"name": "manageJob", 
+				"path": "components/manageJob/manageJob",
+				"style": {
+					"navigationBarTitleText": "我管理的职位"
+				}
+			}
+			,{
+				"name": "shareHistory", 
+				"path": "components/shareHistory/shareHistory",
+				"style": {
+					"navigationBarTitleText": "分享记录"
+				}
+			}
+			,{
+				"name": "throwResume", 
+				"path": "components/throwResume/throwResume",
+				"style": {
+					"navigationBarTitleText": "内推简历"//投递简历页面
+				}
+			}
+			,{
+				"name": "otherIndex", 
+				"path": "pages/otherIndex/otherIndex",
+				"style": {
+					"navigationBarTitleText": "无公司的进来首页"
+				}
+			}
+			,{
+				"name": "changeCompy", //选择企业
+				"path": "components/changeCompy/changeCompy",
+				"style": {
+					"navigationBarTitleText": "选择企业"
+				}
+			}
+			,{
+				"name": "login", //登录
+				"path": "pages/login",
+				"style": {
+					"navigationBarTitleText": "登录"
+				}
+			}
+			,{
+				"name": "toSucc", //内推简历
+				"path": "components/toSucc/toSucc",
+				"style": {
+					"navigationBarTitleText": "内推简历"
+				}
+			}
+			,{
+				"name": "careResume", //职位简历列表
+				"path": "components/careResume/careResume",
+				"style": {
+					"navigationBarTitleText": "分享后内推简历"
+				}
+			}
+			,{
+				"name": "resumeList", //职位简历列表
+				"path": "components/resumeList/resumeList",
+				"style": {
+					"navigationBarTitleText": "职位简历列表"
+				}
+			}
+			,{
+				"name": "resumeDetail", //简历详情
+				"path": "components/resumeDetail/resumeDetail",
+				"style": {
+					"navigationBarTitleText": "简历详情"
+				}
+			}
+			,{
+				"name": "receivedResume", //我收到的简历
+				"path": "components/receivedResume/receivedResume",
+				"style": {
+					"navigationBarTitleText": "我收到的简历"
+				}
+			}
+			,{
+				"name": "jobDetail", //职位详情
+				"path": "components/jobDetail/jobDetail",
+				"query": "id=2&shareId=2",
+				"style": {
+					"navigationBarTitleText": "职位详情"
+				}
+			}
+			,{
+				"name": "compyDetail", //公司详情
+				"path": "components/compyDetail/compyDetail",
+				"style": {
+					"navigationBarTitleText": "公司详情"
+				}
+			}
+			,{
+				"name": "inpushResume", //内推简历
+				"path": "components/inpushResume/inpushResume",
+				"style": {
+					"navigationBarTitleText": "内推简历"
+				}
+			}
+		]
+	},
+	"preloadRule": {
+		// "pagesA/personalInfo/personalInfo": {
+		// 	"network": "wifi",
+		// 	"packages": ["__APP__"]
+		// }
+	}
+	
+}

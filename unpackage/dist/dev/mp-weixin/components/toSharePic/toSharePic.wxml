@@ -1,0 +1,1 @@
+<view class="toSharePic" style="{{'height:'+(windowHeight+'px')+';'}}"><icon class="closed" type="clear" size="32" data-event-opts="{{[['tap',[['closeFn',['$event']]]]]}}" bindtap="__e"></icon><image class="picImg" src="{{imageUrl}}"></image><view class="continueBottom"><button class="share" open-type="share">继续</button></view></view>

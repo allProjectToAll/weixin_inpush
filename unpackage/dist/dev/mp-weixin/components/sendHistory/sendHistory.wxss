@@ -1,0 +1,354 @@
+
+.load-more {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 80rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.loading-img {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+}
+.loading-text {
+	font-size: 28rpx;
+	color: #777777;
+}
+.loading-img > view {
+	position: absolute;
+}
+.load1,
+.load2,
+.load3 {
+	height: 24px;
+	width: 24px;
+}
+.load2 {
+	-webkit-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	        transform: rotate(30deg);
+}
+.load3 {
+	-webkit-transform: rotate(60deg);
+	    -ms-transform: rotate(60deg);
+	        transform: rotate(60deg);
+}
+.loading-img > view view {
+	width: 6px;
+	height: 2px;
+	-webkit-border-top-left-radius: 1px;
+	        border-top-left-radius: 1px;
+	-webkit-border-bottom-left-radius: 1px;
+	        border-bottom-left-radius: 1px;
+	background: #777;
+	position: absolute;
+	opacity: 0.2;
+	-webkit-transform-origin: 50%;
+	    -ms-transform-origin: 50%;
+	        transform-origin: 50%;
+	-webkit-animation: load 1.56s ease infinite;
+}
+.loading-img > view view:nth-child(1) {
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	top: 2px;
+	left: 9px;
+}
+.loading-img > view view:nth-child(2) {
+	-webkit-transform: rotate(180deg);
+	top: 11px;
+	right: 0px;
+}
+.loading-img > view view:nth-child(3) {
+	-webkit-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	        transform: rotate(270deg);
+	bottom: 2px;
+	left: 9px;
+}
+.loading-img > view view:nth-child(4) {
+	top: 11px;
+	left: 0px;
+}
+.load1 view:nth-child(1) {
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+}
+.load2 view:nth-child(1) {
+	-webkit-animation-delay: 0.13s;
+	        animation-delay: 0.13s;
+}
+.load3 view:nth-child(1) {
+	-webkit-animation-delay: 0.26s;
+	        animation-delay: 0.26s;
+}
+.load1 view:nth-child(2) {
+	-webkit-animation-delay: 0.39s;
+	        animation-delay: 0.39s;
+}
+.load2 view:nth-child(2) {
+	-webkit-animation-delay: 0.52s;
+	        animation-delay: 0.52s;
+}
+.load3 view:nth-child(2) {
+	-webkit-animation-delay: 0.65s;
+	        animation-delay: 0.65s;
+}
+.load1 view:nth-child(3) {
+	-webkit-animation-delay: 0.78s;
+	        animation-delay: 0.78s;
+}
+.load2 view:nth-child(3) {
+	-webkit-animation-delay: 0.91s;
+	        animation-delay: 0.91s;
+}
+.load3 view:nth-child(3) {
+	-webkit-animation-delay: 1.04s;
+	        animation-delay: 1.04s;
+}
+.load1 view:nth-child(4) {
+	-webkit-animation-delay: 1.17s;
+	        animation-delay: 1.17s;
+}
+.load2 view:nth-child(4) {
+	-webkit-animation-delay: 1.3s;
+	        animation-delay: 1.3s;
+}
+.load3 view:nth-child(4) {
+	-webkit-animation-delay: 1.43s;
+	        animation-delay: 1.43s;
+}
+@-webkit-keyframes load {
+0% {
+		opacity: 1;
+}
+100% {
+		opacity: 0.2;
+}
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 清除浮动 */
+.careResumeList {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.careResumeList .fast-search-box-relative {
+    position: relative;
+}
+.careResumeList .page-header-title-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 40rpx;
+    font-size: 40rpx;
+    font-weight: bolder;
+}
+.careResumeList .page-header-title-box .tui-color {
+      color: #200BFF;
+}
+.careResumeList .page-header-title-box .indexLogo {
+      width: 214rpx;
+      height: 65rpx;
+}
+.careResumeList .list-box {
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 0 40rpx 0;
+    overflow: auto;
+    background: white;
+    margin-top: 20rpx;
+    height: -webkit-calc(100% - 122rpx);
+    height: calc(100% - 122rpx);
+}
+.careResumeList .list-box .eachCareResume {
+      width: 100%;
+      height: 312rpx;
+      position: relative;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox, .careResumeList .list-box .eachCareResume .deletCare {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 2;
+        background: white;
+        -webkit-transition: left 0.2s ease-in-out;
+        -o-transition: left 0.2s ease-in-out;
+        transition: left 0.2s ease-in-out;
+        padding: 40rpx 40rpx 0 40rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent {
+          width: 100%;
+          height: 99%;
+          border-bottom: 1px solid #E5E5E5;
+          position: relative;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox {
+            width: 500rpx;
+            float: left;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .eachCareResumeLeftName {
+              font-size: 34rpx;
+              font-weight: bolder;
+              width: 100%;
+              overflow: hidden;
+              white-space: nowrap;
+              -o-text-overflow: ellipsis;
+                 text-overflow: ellipsis;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .eachCareResumedetail {
+              font-size: 26rpx;
+              color: rgba(0, 0, 0, 0.65);
+              margin-top: 16rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .eachCareCompy {
+              font-size: 26rpx;
+              color: #203AD2;
+              margin-top: 16rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .otherPeopBox {
+              margin-top: 36rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .otherPeopBox .headerImg {
+                width: 60rpx;
+                height: 60rpx;
+                display: block;
+                float: left;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .otherPeopBox .peopName {
+                color: rgba(0, 0, 0, 0.65);
+                font-size: 26rpx;
+                line-height: 60rpx;
+                float: left;
+                margin-left: 20rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeLeftBox .otherPeopBox .peopInvite {
+                float: left;
+                color: rgba(0, 0, 0, 0.85);
+                font-size: 26rpx;
+                font-weight: bolder;
+                margin-left: 20rpx;
+                line-height: 60rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeRightBox {
+            float: right;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeRightBox .money {
+              color: #F80080;
+              text-align: right;
+              font-size: 34rpx;
+}
+.careResumeList .list-box .eachCareResume .eachCareResumeBox .eachCareResumeBoxContent .eachCareResumeRightBox .time {
+              text-align: center;
+              color: rgba(0, 0, 0, 0.65);
+              font-size: 26rpx;
+              margin-top: 149rpx;
+}
+.careResumeList .list-box .eachCareResume .deletCare .notCareBox {
+        width: 160rpx;
+        float: right;
+        height: 100%;
+        background: #F06262;
+        overflow: hidden;
+}
+.careResumeList .list-box .eachCareResume .deletCare .deletImg {
+        margin: 107rpx 0 0 55rpx;
+        width: 66rpx;
+        height: 66rpx;
+}
+.careResumeList .list-box .eachCareResume .deletCare .noCareMess {
+        font-size: 24rpx;
+        text-align: center;
+        line-height: 40rpx;
+        color: white;
+}
+.careResumeList .list-box2 .eachlistBox2 {
+    position: relative;
+    height: 225rpx;
+    width: -webkit-calc(100% - 80rpx);
+    width: calc(100% - 80rpx);
+    margin: 40rpx auto 0;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+}
+.careResumeList .list-box2 .eachlistBox2 .jobNameBox {
+      font-size: 34rpx;
+      font-weight: bolder;
+      display: table;
+}
+.careResumeList .list-box2 .eachlistBox2 .jobNameBox .jobName {
+        float: left;
+}
+.careResumeList .list-box2 .eachlistBox2 .jobNameBox .money {
+        margin-left: 10rpx;
+        float: left;
+        color: #F80080;
+}
+.careResumeList .list-box2 .eachlistBox2 .compyName {
+      color: #595959;
+      font-size: 28rpx;
+      margin-top: 36rpx;
+}
+.careResumeList .list-box2 .eachlistBox2 .time {
+      color: #595959;
+      font-size: 28rpx;
+      margin-top: 20rpx;
+}
+.careResumeList .list-box2 .status {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+

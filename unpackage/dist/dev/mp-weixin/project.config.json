@@ -1,0 +1,166 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wxa1575b505856233c",
+	"projectname": "in-push",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"name": "inPushHistory",
+					"style": {
+						"navigationBarTitleText": "内推记录"
+					},
+					"id": 0,
+					"pathName": "components/inPushHistory/inPushHistory"
+				},
+				{
+					"name": "sendHistory",
+					"style": {
+						"navigationBarTitleText": "投递记录"
+					},
+					"id": 1,
+					"pathName": "components/sendHistory/sendHistory"
+				},
+				{
+					"name": "manageJob",
+					"style": {
+						"navigationBarTitleText": "我管理的职位"
+					},
+					"id": 2,
+					"pathName": "components/manageJob/manageJob"
+				},
+				{
+					"name": "shareHistory",
+					"style": {
+						"navigationBarTitleText": "分享记录"
+					},
+					"id": 3,
+					"pathName": "components/shareHistory/shareHistory"
+				},
+				{
+					"name": "throwResume",
+					"style": {
+						"navigationBarTitleText": "内推简历"
+					},
+					"id": 4,
+					"pathName": "components/throwResume/throwResume"
+				},
+				{
+					"name": "otherIndex",
+					"style": {
+						"navigationBarTitleText": "无公司的进来首页"
+					},
+					"id": 5,
+					"pathName": "pages/otherIndex/otherIndex"
+				},
+				{
+					"name": "changeCompy",
+					"style": {
+						"navigationBarTitleText": "选择企业"
+					},
+					"id": 6,
+					"pathName": "components/changeCompy/changeCompy"
+				},
+				{
+					"name": "login",
+					"style": {
+						"navigationBarTitleText": "登录"
+					},
+					"id": 7,
+					"pathName": "pages/login"
+				},
+				{
+					"name": "toSucc",
+					"style": {
+						"navigationBarTitleText": "内推简历"
+					},
+					"id": 8,
+					"pathName": "components/toSucc/toSucc"
+				},
+				{
+					"name": "careResume",
+					"style": {
+						"navigationBarTitleText": "分享后内推简历"
+					},
+					"id": 9,
+					"pathName": "components/careResume/careResume"
+				},
+				{
+					"name": "resumeList",
+					"style": {
+						"navigationBarTitleText": "职位简历列表"
+					},
+					"id": 10,
+					"pathName": "components/resumeList/resumeList"
+				},
+				{
+					"name": "resumeDetail",
+					"style": {
+						"navigationBarTitleText": "简历详情"
+					},
+					"id": 11,
+					"pathName": "components/resumeDetail/resumeDetail"
+				},
+				{
+					"name": "receivedResume",
+					"style": {
+						"navigationBarTitleText": "我收到的简历"
+					},
+					"id": 12,
+					"pathName": "components/receivedResume/receivedResume"
+				},
+				{
+					"name": "jobDetail",
+					"query": "id=2&shareId=2",
+					"style": {
+						"navigationBarTitleText": "职位详情"
+					},
+					"id": 13,
+					"pathName": "components/jobDetail/jobDetail"
+				},
+				{
+					"name": "compyDetail",
+					"style": {
+						"navigationBarTitleText": "公司详情"
+					},
+					"id": 14,
+					"pathName": "components/compyDetail/compyDetail"
+				},
+				{
+					"name": "inpushResume",
+					"style": {
+						"navigationBarTitleText": "内推简历"
+					},
+					"id": 15,
+					"pathName": "components/inpushResume/inpushResume"
+				}
+			]
+		}
+	}
+}
